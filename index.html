@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <canvas id="bg"></canvas>
+    <div id="tooltip">
+      <h2>Click on the spheres!</h2>
+    </div>
+    <div id="sun" class="info-box hidden">
+      <h3>Sun</h3>
+      <p>The center of our Solar System.</p>
+      <p>It is a G2 V, yellow dwarf main-sequence star (G-dwarf).</p>
+      <p>Its mass is about 330,000 times that of Earth.</p>
+      <p>It is composed of primarily hydrogen (74%) and helium (24%).</p>
+      <p>Surface temperatures reach 5,500 degrees Celsius (10,000 in Fahrenheit)</p>
+      <a href="https://science.nasa.gov/sun/facts/#:~:text=Our%20Sun%20is%20a%204.5,exist%20on%20our%20home%20planet." target="_blank" rel="noopener noreferrer">More Information</a>
+    </div>
+    <div id="mercury" class="info-box hidden">
+      <h3>Mercury</h3>
+      <p><strong>Diameter</strong>: 4,880 km</p>
+      <p><strong>Distance from Sun</strong>: ~58 million km</p>
+      <p><strong>Orbital period</strong>: 88 Earth days</p>
+      <p><strong>Fun Fact</strong>: Its orbit is highly elliptical, with a perihelion that undergoes precession.</p>
+      <p>Einstein's theory of relativity explains this phenomenon.</p>
+      <a href="https://science.nasa.gov/mercury/facts/" target="_blank" rel="noopener noreferer">More Information</a>
+    </div>
+    <div id="venus" class="info-box hidden">
+      <h3>Venus</h3>
+      <p><strong>Diameter</strong>: 12,104 km</p>
+      <p><strong>Distance from Sun</strong>: ~108 million km</p>
+      <p><strong>Orbital period</strong>: 225 Earth days</p>
+      <p><strong>Fun Fact</strong>: Venus rotates in the opposite direction to most planets, and its day is longer than its year.</p>
+      <p>It also has an extremely thick atmosphere of carbon dioxide (a greenhouse gas),
+        with surface temperatures hot enough to melt lead.
+      </p>
+      <a href="https://science.nasa.gov/venus/facts/" target="_blank" rel="noopener noreferer">More Information</a>
+    </div>
+    <div id="earth" class="info-box hidden">
+      <h3>Earth</h3>
+      <p><strong>Diameter</strong>: 12,742 km</p>
+      <p><strong>Distance from Sun</strong>: ~150 million km</p>
+      <p><strong>Orbital period</strong>: 365.25 days</p>
+      <p><strong>Fun Fact</strong>: Earth is the only known planet to support life, with liquid water and a breathable atmosphere.</p>
+      <a href="https://science.nasa.gov/earth/facts/" target="_blank" rel="noopener noreferer">More Information</a>
+    </div>
+    <div id="mars" class="info-box hidden">
+      <h3>Mars</h3>
+      <p><strong>Diameter</strong>: 6,779 km</p>
+      <p><strong>Distance from Sun</strong>: ~228 million km</p>
+      <p><strong>Orbital period</strong>: 687 Earth days</p>
+      <p><strong>Fun Fact</strong>: Mars has the largest volcano in the solar system, Olympus Mons, and evidence of ancient water flows.</p>
+    </div>
+    <div id="asteroid" class="info-box hidden">
+      <h3>The Asteroid Belt</h3>
+      <p><strong>Location</strong>: Between Mars and Jupiter</p>
+      <p><strong>Width</strong>: ~1 AU (150 million km)</p>
+      <p><strong>Composition</strong>: Millions of rocky and metallic objects</p>
+      <p><strong>Largest Object</strong>: Ceres (dwarf planet)</p>
+      <p><strong>Fun Fact</strong>: The total mass of the asteroid belt is less than that of Earth's Moon.</p>
+      <a href="https://www.space.com/16105-asteroid-belt.html" target="_blank" rel="noopener noreferer">More Information About the Asteroid Belt</a>
+      <a href="https://science.nasa.gov/solar-system/asteroids/facts/" target="_blank" rel="noopener noreferer">More Information About Asteroids</a>      
+    </div>
+    <div id="jupiter" class="info-box hidden">
+      <h3>Jupiter</h3>
+      <p><strong>Diameter</strong>: 139,820 km</p>
+      <p><strong>Distance from Sun</strong>: ~778 million km</p>
+      <p><strong>Orbital period</strong>: 12 Earth years</p>
+      <p><strong>Fun Fact</strong>: Jupiter has 79 known moons and a massive storm called the Great Red Spot, which has been raging for centuries.</p>
+      <p>Winds in this storm can reach speeds upwards of 400 miles per hour.</p>
+      <p>One of its moons, Io, is the most volcanically active in the Solar System due to its close orbit and Jupiter's gravitational pull</p>
+      <a href="https://science.nasa.gov/jupiter/jupiter-facts/" target="_blank" rel="noopener noreferer">More Information</a>      
+    </div>
+    <div id="saturn" class="info-box hidden">
+      <h3>Saturn</h3>
+      <p><strong>Diameter</strong>: 116,460 km</p>
+      <p><strong>Distance from Sun</strong>: ~1.4 billion km</p>
+      <p><strong>Orbital period</strong>: 29 Earth years</p>
+      <p><strong>Fun Fact</strong>: Saturn is famous for its stunning ring system, made of ice and rock particles.</p>
+      <p>The conservation of angular momentum explains why the rings maintain their flat appearance.</p>
+      <a href="https://science.nasa.gov/saturn/facts/" target="_blank" rel="noopener noreferer">More Information</a>      
+    </div>
+    <div id="uranus" class="info-box hidden">
+      <h3>Uranus</h3>
+      <p><strong>Diameter</strong>: 50,724 km</p>
+      <p><strong>Distance from Sun</strong>: ~2.9 billion km</p>
+      <p><strong>Orbital period</strong>: 84 Earth years</p>
+      <p><strong>Fun Fact</strong>: Uranus rotates on its side, with an axial tilt of 98 degrees, causing extreme seasons.</p>
+      <a href="https://science.nasa.gov/uranus/facts/" target="_blank" rel="noopener noreferer">More Information</a>      
+    </div>
+    <div id="neptune" class="info-box hidden">
+      <h3>Neptune</h3>
+      <p><strong>Diameter</strong>: 49,244 km</p>
+      <p><strong>Distance from Sun</strong>: ~4.5 billion km</p>
+      <p><strong>Orbital period</strong>: 165 Earth years</p>
+      <p><strong>Fun Fact</strong>: Neptune has the strongest winds in the solar system, reaching speeds of 2,100 km/h (1,300 mph).</p>
+      <p>Its moon, Triton also holds</p>
+      <a href="https://science.nasa.gov/neptune/neptune-facts/" target="_blank" rel="noopener noreferer">More Information</a>      
+    </div>
+    <footer id="credit">
+      Jonathan Tran (Physics 20A Final Project)
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
